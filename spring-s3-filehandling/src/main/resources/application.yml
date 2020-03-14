@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /aws-s3-app
+  port: 8081
+aws:
+  accessKey: <>
+  secretKey: <>
+  bucketName: bucketName
+  region: us-east-1
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false    
