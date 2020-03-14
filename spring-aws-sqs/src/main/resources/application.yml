@@ -1,0 +1,18 @@
+server:
+  servlet:
+    context-path: /aws-sqs-app
+  port: 8081
+aws:
+  accessKey: <>
+  secretKey: <>
+  region: us-east-1
+  end-point:
+    sqs-url: https://sqs.us-east-1.amazonaws.com/740415732903/my-first-queue
+    fifoqueue-url: https://sqs.us-east-1.amazonaws.com/740415732903/my-first-fifoqueue.fifo 
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      auto: false
+    stack:
+      auto: false    

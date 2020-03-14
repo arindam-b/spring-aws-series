@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /aws-rds-app
+  port: 8081
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect         
+  datasource:
+    url: jdbc:mysql://<aws rds hostname>.us-east-1.rds.amazonaws.com:3306/mydb
+    username: admin
+    password: password 
+    initialization-mode: never
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  show-sql: true    

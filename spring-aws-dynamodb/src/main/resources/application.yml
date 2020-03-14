@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /aws-dynamodb-app
+  port: 8081
+aws:
+  accessKey: <>
+  secretKey: <>
+  region: us-east-1
+  end-point:
+    url: dynamodb.us-east-1.amazonaws.com
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false    
